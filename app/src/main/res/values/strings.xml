@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">"Palavras da Bíblia"</string>
+    <string name="id_adBanner">ca-app-pub-8250381765915307/3527406691</string>
+    <string name="id_BannerGame">ca-app-pub-8250381765915307/5202562395</string>
+    <string name="id_BannerResult">ca-app-pub-8250381765915307/6083086147</string>
+    <string name="title_activity_versus_settings">VersusSettingsActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="quantcoins">0</string>
+    <string name="facebook_application_id" translatable="false">244642152731004</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

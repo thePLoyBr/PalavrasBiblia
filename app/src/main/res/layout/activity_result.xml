@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads='http://schemas.android.com/apk/res-auto'
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.quanticoapps.charadabiblica.views.ResultActivity">
+
+    <ImageView
+        android:id="@+id/id_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintVertical_bias="0.0"
+        ads:srcCompat="@drawable/result_background" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adBannerResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/id_BannerResult"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/acme"
+        android:textSize="24sp"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/id_btn_video"
+        android:layout_width="71dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        ads:layout_constraintBottom_toTopOf="@+id/adBannerResult"
+        ads:layout_constraintEnd_toEndOf="@+id/iv_btn_play"
+        ads:layout_constraintStart_toStartOf="@+id/iv_btn_play"
+        ads:layout_constraintTop_toBottomOf="@+id/iv_btn_play"
+        ads:srcCompat="@drawable/result_btn_video" />
+
+    <ImageView
+        android:id="@+id/iv_btn_play"
+        android:layout_width="134dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:srcCompat="@drawable/result_btn_play" />
+
+    <ImageView
+        android:id="@+id/iv_coin"
+        android:layout_width="38dp"
+        android:layout_height="47dp"
+        ads:layout_constraintEnd_toStartOf="@+id/id_coins"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:srcCompat="@drawable/main_moeda" />
+
+    <TextView
+        android:id="@+id/id_tv_palavrasCorretas"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/abel"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        ads:layout_constraintEnd_toStartOf="@+id/iv_btn_play"
+        ads:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_tv_palavrasPassadas"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/abel"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        ads:layout_constraintStart_toEndOf="@+id/iv_btn_play"
+        ads:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="10"
+        android:textColor="@color/colorAccent"
+        android:textSize="65sp"
+        ads:layout_constraintBottom_toTopOf="@+id/iv_btn_play"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.41"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintVertical_bias="0.68" />
+
+</android.support.constraint.ConstraintLayout>

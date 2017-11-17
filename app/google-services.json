@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "52733876112",
+    "firebase_url": "https://charadabiblica.firebaseio.com",
+    "project_id": "charadabiblica",
+    "storage_bucket": "charadabiblica.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52733876112:android:d6b49de00ac99268",
+        "android_client_info": {
+          "package_name": "br.com.quanticoapps.charadabiblica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52733876112-uqf6s8h056uku0ckf3uno8g1om76pvsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.quanticoapps.charadabiblica",
+            "certificate_hash": "0d8af02255620fd883c522863ffcf741b49090be"
+          }
+        },
+        {
+          "client_id": "52733876112-pk7kprjoeo57t29nc72p3n2frhpgng95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSlkd9dP7odq7FZ9_ooggElEmDNcX5Ins"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52733876112-pk7kprjoeo57t29nc72p3n2frhpgng95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
