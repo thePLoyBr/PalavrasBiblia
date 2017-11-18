@@ -49,15 +49,8 @@ public class GameActivity extends AppCompatActivity implements SensorEventListen
     private ArrayList<String> palavrasCorretas = new ArrayList<>();
     private ArrayList<String> palavrasPassadas = new ArrayList<>();
     private View view;
-
     private MediaPlayer mediaPlayer;
     private MediaPlayer mediaPlayerContagens;
-    /*
-    private MediaPlayer mediaPlayerCorrect;
-    private MediaPlayer mediaPlayerPass;
-    private MediaPlayer mediaPlayerGameOver;
-    private MediaPlayer mediaPlayerCountdown;
-*/
     private AdView adView;
     float standardGravity;
     float thresholdGraqvity;
@@ -90,13 +83,9 @@ public class GameActivity extends AppCompatActivity implements SensorEventListen
         mySensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         myGravitySensor = mySensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY);
 
-        mySensorManager.registerListener(this, myGravitySensor, SensorManager.SENSOR_DELAY_NORMAL);
+        mySensorManager.registerListener(this, myGravitySensor, SensorManager.SENSOR_DELAY_GAME);
 
         view = findViewById(R.id.id_view_game);
-/*        mediaPlayerCorrect = MediaPlayer.create(GameActivity.this, R.raw.correct);
-        mediaPlayerPass = MediaPlayer.create(GameActivity.this, R.raw.beeperror);
-        mediaPlayerGameOver = MediaPlayer.create(GameActivity.this, R.raw.gameover);
-        mediaPlayerCountdown = MediaPlayer.create(GameActivity.this, R.raw.beepcountdown2);*/
     }
 
     @Override
